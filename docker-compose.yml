@@ -1,0 +1,9 @@
+sk-pg:
+  build: .
+  volumes:
+    - .:/searchkit:z
+  command: bash -c "tail -f /dev/null"
+  ports:
+    - 3000:3000
+    - 3001:3001
+    - 4000:4000

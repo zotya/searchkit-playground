@@ -1,0 +1,17 @@
+{
+  "name": "with-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node index"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.7",
+    "@searchkit/schema": "^3.0.0-canary.25",
+    "apollo-server": "*",
+    "apollo-server-express": "^2.19.0",
+    "express": "^4.17.1",
+    "next-with-apollo": "^5.1.0"
+  }
+}
