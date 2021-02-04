@@ -3,6 +3,9 @@ sk-pg:
   volumes:
     - .:/searchkit:z
   command: bash -c "tail -f /dev/null"
+  environment:
+    - SK_ES_SERVER=<http://es_host:9200>
+    - SK_ES_INDEX=<index_name>
   ports:
     - 3000:3000
     - 3001:3001

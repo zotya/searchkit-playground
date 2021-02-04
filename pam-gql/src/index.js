@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import CustomApp from './CustomApp';
 
+
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { SearchkitProvider, SearchkitClient } from '@searchkit/client'
 import {
@@ -23,8 +24,9 @@ const defaultOptions: DefaultOptions = {
       },
     }
 
+console.log(process.env.SK_GQL_SERVER)
 const client = new ApolloClient({
-  uri: 'http://192.168.1.110:4000/graphql',
+  uri: '<http://graphql_host:4000/graphql>',
   cache: new InMemoryCache(),
   defaultOptions: defaultOptions,
 });

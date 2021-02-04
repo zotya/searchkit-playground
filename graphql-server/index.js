@@ -9,9 +9,8 @@ const {
 } = require('@searchkit/schema')
 
 const searchkitConfig = {
-//  host: "http://192.168.1.110:19200",
-  host: "http://192.168.0.187:19200",
-  index: 'esbootstrapdata-pam-withrest_prod',
+  host: process.env.SK_ES_SERVER,
+  index: process.env.SK_ES_INDEX,
   hits: {
     fields: []
   },
