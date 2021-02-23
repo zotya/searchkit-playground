@@ -20,7 +20,7 @@ const client = new ApolloClient({
 const skClient = new SearchkitClient()
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <ApolloProvider client={client} >
       <SearchkitProvider client={skClient}>
         <Router>
@@ -35,6 +35,6 @@ ReactDOM.render(
         </Router>
       </SearchkitProvider>
     </ApolloProvider>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );

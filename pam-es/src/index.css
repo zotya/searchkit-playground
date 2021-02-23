@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sk-results-list {
+  width:70%;
+}
+
+.results-content-body {
+  overflow:auto;
+  /*overflow-y: hidden;*/
+}
+
+.results-content-body td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  text-align: left;
+  color: #333;
+}
+
+.results-content-body table thead tr th {
+  border: 1px solid #ddd;
+  font: 12px "Open Sans","Segoe UI", Tahoma, sans-serif;
+  font-weight: bold;
+  padding:0;
+}
